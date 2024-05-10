@@ -73,3 +73,6 @@ td {
     flex: 2;
 }
 
+.contenido-derecha img {
+    width: 50%;
+}
