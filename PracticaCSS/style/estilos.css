@@ -57,12 +57,21 @@ td {
 
 
 .Palabra {
-    display: flex;
+    border-style: solid;
+    border-color: #000;
+    border-width: 3px;
+
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
 }
 
 .contenido-izquierda {
-    flex: 1;
-    padding: 0 20px;
+    border-style: solid;
+    border-color: red;
+    border-width: 3px;
+
+    padding: 20px;
 }
 
 .contenido-izquierda h2 {
@@ -70,9 +79,18 @@ td {
 }
 
 .contenido-derecha {
-    flex: 2;
+    border-style: solid;
+    border-color: blue;
+    border-width: 3px;
+
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 300px;
+
 }
 
 .contenido-derecha img {
-    width: 50%;
+    height: 300px;
 }
