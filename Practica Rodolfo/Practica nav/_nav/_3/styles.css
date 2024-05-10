@@ -21,7 +21,7 @@ li, a, button {
 /* Estilos para el encabezado */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* los contenedores se separan los mas que puedan y generan un espaciado del mismo tamaño. */
     align-items: center;
     padding: 30px 10%; /* Espaciado interno */
 }
@@ -29,6 +29,11 @@ header {
 /* Estilos para el logotipo */
 .logo {
     cursor: pointer; /* Cambio del cursor al pasar por encima */
+    order: 3;
+    margin-left: auto;
+}
+nav {
+    order: 1;
 }
 
 /* Estilos para los enlaces de navegación */
@@ -41,6 +46,10 @@ header {
     padding: 0px 20px; /* Espaciado interno */
 }
 
+.nav__links li:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
 .nav__links li a {
     transition: all 0.3s ease 0s; /* Transición de propiedades al interactuar */
 }
@@ -49,8 +58,13 @@ header {
     color: #0088A9; /* Color del texto al pasar el mouse */
 }
 
+.cta {
+    order: 2;
+}
+
 /* Estilos para el botón */
 button {
+    margin-left: 20px;
     padding: 9px 25px; /* Espaciado interno */
     background-color: rgba(0,136,169,1); /* Color de fondo */
     border: none; /* Sin borde */

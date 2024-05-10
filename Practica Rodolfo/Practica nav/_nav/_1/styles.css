@@ -21,7 +21,7 @@ li, a, button {
 /* Estilos para el encabezado */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* los contenedores se separan los mas que puedan y generan un espaciado del mismo tamaño. */
     align-items: center;
     padding: 30px 10%; /* Espaciado interno */
 }
