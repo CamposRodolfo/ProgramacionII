@@ -51,10 +51,11 @@ footer {
 /* Estilos para los elementos de la tabla */
 .Objetos, .Objetos_Good {
     font-size: 60px; /* Tamaño de fuente */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border: 1px solid #000; /* Borde sólido */
     border-collapse: collapse; /* Colapsa los bordes */
     text-align: center; /* Alineación horizontal */
-    margin: 5px; /* Margen entre elementos */
+    margin: 10px; /* Margen entre elementos */
     background-color: #ffffff; /* Color de fondo para texto visible */
 }
 
