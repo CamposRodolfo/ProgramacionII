@@ -21,7 +21,7 @@ li, a, button {
 /* Estilos para el encabezado */
 header {
     display: flex;
-    justify-content: space-between; /* los contenedores se separan los mas que puedan y generan un espaciado del mismo tamaño. */
+    justify-content: flex-end; /* Empuja todos los contenedores a la derecha. (toca cambiar .logo para que este a la izquierda "margin-right: auto;")*/
     align-items: center;
     padding: 30px 10%; /* Espaciado interno */
 }
@@ -29,6 +29,7 @@ header {
 /* Estilos para el logotipo */
 .logo {
     cursor: pointer; /* Cambio del cursor al pasar por encima */
+    margin-right: auto; /* agrega un margen a la derecha que hace que se coloque a la izquierda. */
 }
 
 /* Estilos para los enlaces de navegación */
@@ -51,6 +52,7 @@ header {
 
 /* Estilos para el botón */
 button {
+    margin-left: 20px;
     padding: 9px 25px; /* Espaciado interno */
     background-color: rgba(0,136,169,1); /* Color de fondo */
     border: none; /* Sin borde */
