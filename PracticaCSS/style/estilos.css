@@ -57,37 +57,32 @@ td {
 
 
 .Palabra {
-    border-style: solid;
-    border-color: #000;
-    border-width: 3px;
+    background-color: #fff;
 
 
     display: grid; 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px;
 }
 
 .contenido-izquierda {
-    border-style: solid;
-    border-color: red;
-    border-width: 3px;
-
     padding: 20px;
 }
 
 .contenido-izquierda h2 {
     margin-top: 0;
+    font-size: 50px;
+}
+
+.contenido-izquierda p {
+    font-size: 20px;
 }
 
 .contenido-derecha {
-    border-style: solid;
-    border-color: blue;
-    border-width: 3px;
-
-
     display: flex;
     align-items: center;
     justify-items: center;
-    height: 300px;
+    height: 330px;
 
 }
 
