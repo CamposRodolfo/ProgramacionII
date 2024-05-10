@@ -67,6 +67,11 @@ footer {
 
 /* Estilo de Archivos de palabras */
 
+.regresar {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
 
 /* Estilo para los div de las palabras */
 .Palabra {
@@ -105,5 +110,9 @@ footer {
 .contenido-derecha img {
     height: 300px; /* Altura de la imagen */
 }
+
+/* Fin de Estilo para los div de las palabras */
+
+
 
 /* Fin de Estilos de Archivos de palabras */
