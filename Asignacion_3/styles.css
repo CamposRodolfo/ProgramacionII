@@ -29,11 +29,6 @@ header {
 /* Estilos para el logotipo */
 .logo {
     cursor: pointer; /* Cambio del cursor al pasar por encima */
-    order: 3;
-    margin-left: auto;
-}
-nav {
-    order: 1;
 }
 
 /* Estilos para los enlaces de navegación */
@@ -46,10 +41,6 @@ nav {
     padding: 0px 20px; /* Espaciado interno */
 }
 
-.nav__links li:nth-child(1) {
-    padding: 0 20px 0 0;
-}
-
 .nav__links li a {
     transition: all 0.3s ease 0s; /* Transición de propiedades al interactuar */
 }
@@ -58,24 +49,14 @@ nav {
     color: #0088A9; /* Color del texto al pasar el mouse */
 }
 
-.cta {
-    order: 2;
-}
-
 /* Estilos para el botón */
 button {
-    margin-left: 20px;
     padding: 9px 25px; /* Espaciado interno */
     background-color: rgba(0,136,169,1); /* Color de fondo */
     border: none; /* Sin borde */
     border-radius: 50px; /* Borde redondeado */
     cursor: pointer; /* Cambio del cursor al pasar por encima */
     transition: all 0.3s ease 0s; /* Transición de propiedades al interactuar */
-        /*transition: Define una transición entre los estados de un elemento. Los argumentos son:
-            all: Indica que se aplicará la transición a todas las propiedades.
-            0.3s: Duración de la transición (en segundos).
-            ease: Función de aceleración que describe cómo cambia la velocidad de la transición. En este caso, "ease" proporciona una transición suave y gradual.
-            0s: Retraso antes de que comience la transición (en segundos). */
 }
 
 button:hover {
