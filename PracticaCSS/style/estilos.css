@@ -1,91 +1,101 @@
+/* Estilos Generales */
+
+/* Establece márgenes a 0 y color de fondo para el body */
 body {
     margin: 0;
     background-color: #EDE9DA;
 }
 
+/* Estilos para el encabezado */
 header {
     background-color: #fff;
 }
 
+/* Estilos para el pie de página */
 footer {
     background-color: #fff;
 }
-
-.Tabla {
-    
-}
-
-.Tabla a {
-    text-decoration: none;
-}
-
-.Filas {
-    border-width: 3px;
-    border-style: solid;
-    border-color: #000;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.Objetos {
-    border-width: 3px;
-    border-style: solid;
-    border-color: red;
-
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    height: 100px;
-}
+/* Fin de estilos Generales*/
 
 
-table {
-    font-size: 50px;
+/* Estilos de Index.html*/ 
+
+/* Estilos para el encabezado en Index.html */
+.Encabezado {
     text-align: center;
 }
 
-td {
-    border-style: solid;
-    border-color: #000;
-    border-width: 3px;
+
+/* Estilo para los enlaces dentro de la tabla en Index.html */
+.Tabla a {
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    color: #A9A9A9; /* Color de texto */
 }
 
+/* Estilos para párrafos dentro de elementos con clase "Objetos_Good" */
+.Objetos_Good p {
+    color: #000; /* Color de texto */
+}
+
+/* Estilos para las filas de la tabla */
+.Filas {
+    display: grid; /* Se establece como una cuadrícula */
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+    align-items: center; /* Alineación vertical */
+}
+
+/* Estilos para los elementos de la tabla */
+.Objetos, .Objetos_Good {
+    font-size: 60px; /* Tamaño de fuente */
+    border: 1px solid #000; /* Borde sólido */
+    border-collapse: collapse; /* Colapsa los bordes */
+    text-align: center; /* Alineación horizontal */
+    margin: 5px; /* Margen entre elementos */
+    background-color: #ffffff; /* Color de fondo para texto visible */
+}
+
+/* Fin de Estilos de Index.html*/ 
 
 
+/* Estilo de Archivos de palabras */
 
 
-
+/* Estilo para los div de las palabras */
 .Palabra {
-    background-color: #fff;
+    background-color: #fff; /* Color de fondo */
 
-
-    display: grid; 
-    grid-template-columns: 2fr 1fr;
-    margin: 10px;
+    display: grid; /* Se establece como una cuadrícula */
+    grid-template-columns: 2fr 1fr; /* Dos columnas, la primera con mayor tamaño */
+    margin: 10px; /* Margen exterior */
 }
 
+/* Estilos para el contenido en el lado izquierdo */
 .contenido-izquierda {
-    padding: 20px;
+    padding: 20px; /* Relleno interior */
 }
 
+/* Estilos para títulos en el contenido izquierdo */
 .contenido-izquierda h2 {
-    margin-top: 0;
-    font-size: 50px;
+    margin-top: 0; /* Elimina margen superior predeterminado */
+    font-size: 50px; /* Tamaño de fuente */
 }
 
+/* Estilos para párrafos en el contenido izquierdo */
 .contenido-izquierda p {
-    font-size: 20px;
+    font-size: 20px; /* Tamaño de fuente */
 }
 
+/* Estilos para el contenido en el lado derecho */
 .contenido-derecha {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    height: 330px;
-
+    display: flex; /* Se establece como flexbox */
+    align-items: center; /* Alinea elementos verticalmente */
+    justify-items: center; /* Alinea elementos horizontalmente */
+    height: 330px; /* Altura fija */
 }
 
+/* Estilos para imágenes en el contenido derecho */
 .contenido-derecha img {
-    height: 300px;
+    height: 300px; /* Altura de la imagen */
 }
+
+/* Fin de Estilos de Archivos de palabras */
