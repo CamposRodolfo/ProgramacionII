@@ -174,3 +174,40 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Estilos para el apartado de contacto */
+.contact_about_us{
+    display: flex;
+}
+
+.about_us{
+    flex: 54.5%;
+    margin-right: 2.5%;
+    margin-left: 6%;
+}
+
+.description{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact_us{
+    flex: 24.4%;
+    margin-left: 2.5%;
+    margin-right: 6%;
+}
+
+.contacts{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/*Fin de los estilos para el apartado de contactos*/
