@@ -6,11 +6,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     background-color: #24252A; /* Color de fondo */
 }
 
-/* Estilos para elementos de lista, enlaces y botones */
-li, a, button {
+
+/* Estilos para el header*/
+
+/* Estilos para elementos de lista, enlaces y botones dentro del header*/
+header li, header a, header button {
     font-family: "Montserrat", sans-serif; /* Familia tipográfica */
     font-weight: 500; /* Grosor del texto */
     font-size: 16px; /* Tamaño del texto */
@@ -64,3 +70,36 @@ button {
 button:hover {
     background-color: rgba(0,136,169,0.8); /* Color de fondo al pasar el mouse */
 }
+
+/*Fin de los estilos del encabezado*/
+
+/* Fin de los estilos generales*/
+
+
+
+
+
+/* Estilos de Home.html */
+
+.news {
+    display: flex;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.news section, .news h2, .news p {
+    padding: 20px;
+}
+
+.news section {
+    order: 1;
+    width: 75%;
+    background-color: #fff;
+}
+
+.news img {
+    order: 2;
+    width: 25%;
+}
+
+/* Fin de los estilos home.html */
