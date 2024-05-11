@@ -1,17 +1,23 @@
+
 /* Importaciones */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
 /* Estilos generales */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif; /* Familia tipográfica */
+}
+
+body {
     background-color: #24252A; /* Color de fondo */
 }
 
-/* Estilos para elementos de lista, enlaces y botones */
-li, a, button {
-    font-family: "Montserrat", sans-serif; /* Familia tipográfica */
+
+/* Estilos para el header*/
+
+/* Estilos para elementos de lista, enlaces y botones dentro del header*/
+header li, header a, header button {
     font-weight: 500; /* Grosor del texto */
     font-size: 16px; /* Tamaño del texto */
     color: #edf0f1; /* Color del texto */
@@ -65,6 +71,56 @@ button:hover {
     background-color: rgba(0,136,169,0.8); /* Color de fondo al pasar el mouse */
 }
 
+/*Fin de los estilos del encabezado*/
+
+/* Fin de los estilos generales*/
+
+
+
+
+
+/* Estilos de Home.html */
+
+.noticias {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.noticia {
+    width: 530px;
+    height: 410px;
+    background: #fff;
+    text-align: center;
+    border-radius: 3%;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+.noticia:hover {
+    height: 550px;
+}
+
+.noticia img {
+    width: 500px;
+    margin: 15px;
+    border-radius: 3%;
+}
+
+.noticia p {
+    margin: 15px;
+    text-align: justify;
+}
+
+.news__more {
+    align-self: right;
+}
+
+/* Fin de los estilos home.html */
+
+
+
 /* Estilo para el primer div que ocupa la mitad de la hoja */
 .primer-div {
     display: flex;
@@ -75,11 +131,13 @@ button:hover {
     height: 500px; /* Define la altura del div */
 }
 
+
 /* Estilo para las imágenes dentro del primer div */
 .primer-div img {
     width: 80%;
     height: auto; /* Ajusta la altura de la imagen manteniendo su relación de aspecto */
 }
+
 
 /* Estilo para el segundo div que contiene las tres imágenes */
 .segundo-div {
@@ -90,8 +148,20 @@ button:hover {
     gap: 10px; /* Espacio entre las imágenes */
 }
 
+
 /* Estilo para las imágenes dentro del segundo div */
 .segundo-div img {
     width: 100%;
     height: auto; /* Ajusta la altura de la imagen manteniendo su relación de aspecto */
 }
+
+
+#mi-video {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
