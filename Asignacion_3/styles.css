@@ -3,9 +3,9 @@
 
 /* Estilos generales */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif; /* Familia tipográfica */
 }
 
 body {
@@ -17,7 +17,6 @@ body {
 
 /* Estilos para elementos de lista, enlaces y botones dentro del header*/
 header li, header a, header button {
-    font-family: "Montserrat", sans-serif; /* Familia tipográfica */
     font-weight: 500; /* Grosor del texto */
     font-size: 16px; /* Tamaño del texto */
     color: #edf0f1; /* Color del texto */
@@ -81,25 +80,40 @@ button:hover {
 
 /* Estilos de Home.html */
 
-.news {
-    display: flex;
-    margin: 20px;
-    background-color: #fff;
+.noticias {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
-.news section, .news h2, .news p {
-    padding: 20px;
+.noticia {
+    width: 530px;
+    height: 410px;
+    background: #fff;
+    text-align: center;
+    border-radius: 3%;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
 }
 
-.news section {
-    order: 1;
-    width: 75%;
-    background-color: #fff;
+.noticia:hover {
+    height: 550px;
 }
 
-.news img {
-    order: 2;
-    width: 25%;
+.noticia img {
+    width: 500px;
+    margin: 15px;
+    border-radius: 3%;
+}
+
+.noticia p {
+    margin: 15px;
+    text-align: justify;
+}
+
+.news__more {
+    align-self: right;
 }
 
 /* Fin de los estilos home.html */
