@@ -40,12 +40,12 @@ header {
     justify-content: flex-end; /* Empuja todos los contenedores a la derecha. (toca cambiar.logo para que este a la izquierda "margin-right: auto;")*/
     align-items: center;
     padding: 5px 10%; /* Espaciado interno */
-    background-color: #24252A;
+    /* background-color: #24252A;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 2; */
 }
 
 /* Estilos para el logotipo */
@@ -90,6 +90,9 @@ header button:hover {
 /*Fin de los estilos del encabezado*/
 
 /* Fin de los estilos generales*/
+
+
+
 
 
 /* Estilos de Home.html */
