@@ -64,3 +64,34 @@ button {
 button:hover {
     background-color: rgba(0,136,169,0.8); /* Color de fondo al pasar el mouse */
 }
+
+/* Estilo para el primer div que ocupa la mitad de la hoja */
+.primer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; /* Centra el div horizontalmente */
+    height: 500px; /* Define la altura del div */
+}
+
+/* Estilo para las imágenes dentro del primer div */
+.primer-div img {
+    width: 80%;
+    height: auto; /* Ajusta la altura de la imagen manteniendo su relación de aspecto */
+}
+
+/* Estilo para el segundo div que contiene las tres imágenes */
+.segundo-div {
+    width: 80%;
+    margin: 0 auto; /* Centra el div horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas iguales */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para las imágenes dentro del segundo div */
+.segundo-div img {
+    width: 100%;
+    height: auto; /* Ajusta la altura de la imagen manteniendo su relación de aspecto */
+}
