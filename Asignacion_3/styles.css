@@ -15,7 +15,6 @@ body {
     width: 100%; /* Establece el ancho al 100% */
     background-color: #2d3b86; /* Establece una imagen de fondo con un degradado lineal */
     font-family: "Montserrat", sans-serif; /* Establece la familia tipográfica */
-    text-transform: capitalize; /* Transforma el texto a mayúsculas iniciales */
 }
 
 /* Estilos para el header*/
