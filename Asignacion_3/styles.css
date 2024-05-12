@@ -175,8 +175,8 @@ header button:hover {
 
 .noticias {
     height: 750px; /* Establece una altura fija para el contenedor de noticias */
-    background: rgb(45,59,134);
-    background: linear-gradient(0deg, rgba(45,59,134,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(45,59,134,1) 100%);
+    background: #e9e5d9;
+    /* background: linear-gradient(0deg, rgba(45,59,134,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(45,59,134,1) 100%); */
     display: grid; /* Utiliza un sistema de cuadrícula para organizar las noticias */
     grid-template-columns: repeat(3, 1fr); /* Divide el espacio en tres columnas iguales */
     justify-items: center; /* Centra los elementos horizontalmente */
@@ -485,20 +485,6 @@ header button:hover {
     margin-bottom: 2%;
     padding: 2%;
     overflow: hidden;
-    transition: 0.5s ease-in-out;
-    text-align: justify;
-  }
-
-  .pregunta:hover {
-    height: 23%;
-  }
-
-  .pregunta{
-    height: 1%;
-    background-color: #fff;
-    margin-bottom: 2%;
-    padding: 2%;
-    overflow: hidden;
     transition: 0.4s ease-in-out;
     text-align: justify;
   }
@@ -508,4 +494,6 @@ header button:hover {
   }
 
   /* Fin de contactos */
+
+
 
