@@ -260,12 +260,14 @@ header button:hover {
     
 }
 
+
 .deportivas__noticia {
     padding-top: 15px;
 }
 
-.deportivas__noticia video {
-    width: 500px; /* Establece un ancho fijo para las imágenes de las noticias */
+.deportivas__noticia video, .deportivas__noticia iframe{
+    width: 95%; /* Establece un ancho fijo para las imágenes de las noticias */
+    height: 250px;
 }
 
 .deportivas__noticia p {
