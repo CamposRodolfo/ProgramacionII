@@ -407,6 +407,11 @@ header button:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
 }
 
+.contact_info{
+    margin-left: 7%;
+    margin-bottom: 1.5%;
+}
+
 .forms_box{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -418,12 +423,30 @@ header button:hover {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 3%;
+    margin-top: 1%;
     padding: 2%;
     width: 90%;
-    height: 40%;
+    height: 30%;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px; /*Cambia el tamaño de la letra del placeholder*/
+}
+
+.forms_button {
+    color: #fff;
+    text-align: center;
+    margin-left: 1%;
+    padding: 1%; /* Espaciado interno */
+    background-color: rgba(0,136,169,1); /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Borde redondeado */
+    cursor: pointer; /* Cambio del cursor al pasar por encima */
+    transition: all 0.3s ease 0s; /* Transición de propiedades al interactuar */
+}
+
+.forms_button:hover {
+    background-color: rgba(0,136,169,0.8); /* Color de fondo al pasar el mouse */
 }
 
 #message {
@@ -434,7 +457,21 @@ header button:hover {
   #message::placeholder {
     position: absolute; /* Permite mover el placeholder de posición */
     top: 12%;
-    left: 2%; 
+    left: 2%;
+  }
+
+  .pregunta{
+    height: 1%;
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    text-align: justify;
+  }
+
+  .pregunta:hover {
+    height: 23%;
   }
 
   /* Fin de contactos */
