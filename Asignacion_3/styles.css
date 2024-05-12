@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: "Montserrat", sans-serif; /* Familia tipográfica */
 }
 
 body {
@@ -16,6 +15,8 @@ body {
     width: 100;
     height: 100vh;
     background-image: linear-gradient(#24252A 10%, #2d3b86 75%, #24252A); /* Color de fondo */
+    font-family: "Montserrat", sans-serif; /* Familia tipográfica */
+    text-transform: capitalize;
 }
 
 /* Estilos para el contenedor principal */
@@ -45,12 +46,6 @@ header {
     justify-content: flex-end; /* Empuja todos los contenedores a la derecha. (toca cambiar.logo para que este a la izquierda "margin-right: auto;")*/
     align-items: center;
     padding: 5px 10%; /* Espaciado interno */
-    /* background-color: #24252A;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2; */
 }
 
 /* Estilos para el logotipo */
@@ -58,6 +53,10 @@ header {
     cursor: pointer; /* Cambio del cursor al pasar por encima */
     margin-right: auto; /* agrega un margen a la derecha que hace que se coloque a la izquierda. */
 
+}
+
+.logo img {
+ height: 150px;
 }
 
 /* Estilos para los enlaces de navegación */
