@@ -9,12 +9,12 @@
 }
 
 body {
-    background-color: #24252A; /* Color de fondo */
+    background-image: linear-gradient(#24252A 10%, #2d3b86 75%, #24252A); /* Color de fondo */
 }
 
 /* Estilos para el contenedor principal */
 .contenedor-principal {
-    background-color: #fff;
+    background-color: black;
     width: 80%;
     margin: 0 auto;
     padding: 30px 10%;
@@ -34,22 +34,25 @@ header li, header a, header button {
 
 /* Estilos para el encabezado */
 header {
+    border-radius: 0 0 3% 3%;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-end; /* Empuja todos los contenedores a la derecha. (toca cambiar.logo para que este a la izquierda "margin-right: auto;")*/
     align-items: center;
     padding: 5px 10%; /* Espaciado interno */
-    background-color: #24252A;
+    /* background-color: #24252A;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 2; */
 }
 
 /* Estilos para el logotipo */
 .logo {
     cursor: pointer; /* Cambio del cursor al pasar por encima */
     margin-right: auto; /* agrega un margen a la derecha que hace que se coloque a la izquierda. */
+
 }
 
 /* Estilos para los enlaces de navegación */
@@ -71,7 +74,7 @@ header {
 }
 
 /* Estilos para el botón */
-button {
+header button {
     margin-left: 20px;
     padding: 9px 25px; /* Espaciado interno */
     background-color: rgba(0,136,169,1); /* Color de fondo */
@@ -81,13 +84,16 @@ button {
     transition: all 0.3s ease 0s; /* Transición de propiedades al interactuar */
 }
 
-button:hover {
+header button:hover {
     background-color: rgba(0,136,169,0.8); /* Color de fondo al pasar el mouse */
 }
 
 /*Fin de los estilos del encabezado*/
 
 /* Fin de los estilos generales*/
+
+
+
 
 
 /* Estilos de Home.html */
@@ -124,10 +130,6 @@ button:hover {
     text-align: justify;
 }
 
-.news__more {
-    align-self: right;
-}
-
 /* Fin de los estilos home.html */
 
 
@@ -159,13 +161,6 @@ button:hover {
 }
 
 
-/* Estilo para las imágenes dentro del segundo div */
-.segundo-div img {
-    width: 100%;
-    height: auto; /* Ajusta la altura de la imagen manteniendo su relación de aspecto */
-}
-
-
 #mi-video {
     width: 80%;
     margin: 0 auto;
@@ -174,3 +169,40 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Estilos para el apartado de contacto */
+.contact_about_us{
+    display: flex;
+}
+
+.about_us{
+    flex: 54.5%;
+    margin-right: 2.5%;
+    margin-left: 6%;
+}
+
+.description{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact_us{
+    flex: 24.4%;
+    margin-left: 2.5%;
+    margin-right: 6%;
+}
+
+.contacts{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/*Fin de los estilos para el apartado de contactos*/
