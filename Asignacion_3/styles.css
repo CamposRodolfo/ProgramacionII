@@ -13,7 +13,7 @@
 /* Estilos generales del cuerpo de la página */
 body {
     width: 100%; /* Establece el ancho al 100% */
-    background-image: linear-gradient(#24252A, #2d3b86, #24252A); /* Establece una imagen de fondo con un degradado lineal */
+    background-color: #2d3b86; /* Establece una imagen de fondo con un degradado lineal */
     font-family: "Montserrat", sans-serif; /* Establece la familia tipográfica */
     text-transform: capitalize; /* Transforma el texto a mayúsculas iniciales */
 }
@@ -30,6 +30,7 @@ header li, header a, header button {
 
 /* Estilos para el encabezado */
 header {
+    background-image: linear-gradient(#24252A, #2d3b86);
     border-radius: 0 0 3% 3%; /* Define un radio de borde para las esquinas inferiores */
     margin-bottom: 20px; /* Establece un margen inferior de 20px */
     display: flex; /* Establece el contenedor como un flexbox */
@@ -42,6 +43,10 @@ header {
 .logo {
     cursor: pointer; /* Establece el cursor como un puntero al pasar sobre el logotipo */
     margin-right: auto; /* Alinea el logotipo a la izquierda, agregando margen derecho automático */
+    background-color: #FFF;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
 }
 
 .logo img {
@@ -95,6 +100,7 @@ header button:hover {
 .footer {
     width: 100vw; /* Establece el ancho del pie de página al ancho de la ventana */
     padding: 80px 0; /* Establece un relleno interno de 80px arriba y abajo y 0 a los lados */
+    background-image: linear-gradient(#2d3b86, #24252A);
 }
 
 .footer__row {
@@ -168,7 +174,9 @@ header button:hover {
 /* Home */
 
 .noticias {
-    height: 600px; /* Establece una altura fija para el contenedor de noticias */
+    height: 750px; /* Establece una altura fija para el contenedor de noticias */
+    background: rgb(45,59,134);
+    background: linear-gradient(0deg, rgba(45,59,134,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(45,59,134,1) 100%);
     display: grid; /* Utiliza un sistema de cuadrícula para organizar las noticias */
     grid-template-columns: repeat(3, 1fr); /* Divide el espacio en tres columnas iguales */
     justify-items: center; /* Centra los elementos horizontalmente */
@@ -181,6 +189,10 @@ header button:hover {
     background: #fff; /* Establece un fondo blanco para la noticia */
     text-align: center; /* Centra el contenido de la noticia */
     border-radius: 3%; /* Establece esquinas redondeadas */
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(0,0,0,0.440);
+    border-left: 2px rgba(0,0,0,0.545) outset;
+    box-shadow:-40px 50px 30px rgba(0,0,0,0.280);
     overflow: hidden; /* Oculta el contenido que se desborde */
     transition: 0.4s ease-in-out; /* Agrega una transición suave al cambiar la altura de la noticia */
 }
@@ -240,17 +252,22 @@ header button:hover {
     display: grid; /* Utiliza un sistema de cuadrícula para organizar las noticias */
     grid-template-columns: repeat(3, 1fr); /* Divide el espacio en tres columnas iguales */
     justify-items: center; /* Centra los elementos horizontalmente */
-    background-image: url("images/deportefondo.jpeg");
+    background-image: url("images/sport.jpg");
     background-size: cover;
 }
 
 .deportivas__noticia {
+    background-image: linear-gradient(#2d3b86, #fff, #2d3b86);
     width: 600px; /* Establece un ancho fijo para cada noticia */
     height: 420px; /* Establece una altura fija para cada noticia */
     margin: auto; /* Centra la noticia horizontalmente */
     background: #fff; /* Establece un fondo blanco para la noticia */
     text-align: center; /* Centra el contenido de la noticia */
     border-radius: 3%; /* Establece esquinas redondeadas */
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(0,0,0,0.440);
+    border-left: 2px rgba(0,0,0,0.545) outset;
+    box-shadow:-40px 50px 30px rgba(0,0,0,0.280);
     overflow: hidden; /* Oculta el contenido que se desborde */
     transition: 0.4s ease-in-out; /* Agrega una transición suave al cambiar la altura de la noticia */
 }
@@ -341,6 +358,8 @@ header button:hover {
 
 .contact_about_us{
     display: flex;
+    background: rgb(45,59,134);
+    background: linear-gradient(0deg, rgba(45,59,134,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(45,59,134,1) 100%);
 }
 
 .about_us{
