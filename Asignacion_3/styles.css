@@ -246,7 +246,7 @@ header button:hover {
 
 .deportivas__noticia {
     width: 600px; /* Establece un ancho fijo para cada noticia */
-    height: 400px; /* Establece una altura fija para cada noticia */
+    height: 420px; /* Establece una altura fija para cada noticia */
     margin: auto; /* Centra la noticia horizontalmente */
     background: #fff; /* Establece un fondo blanco para la noticia */
     text-align: center; /* Centra el contenido de la noticia */
