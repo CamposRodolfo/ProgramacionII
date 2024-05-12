@@ -12,12 +12,21 @@
 }
 
 body {
+
     width: 100;
     height: 100vh;
     background-image: linear-gradient(#24252A 10%, #2d3b86 75%, #24252A); /* Color de fondo */
 }
 
-
+/* Estilos para el contenedor principal */
+.contenedor-principal {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 10%;
+    position: relative;
+    z-index: 1;
+}
 
 /* Estilos para el header*/
 
@@ -48,6 +57,7 @@ header {
 .logo {
     cursor: pointer; /* Cambio del cursor al pasar por encima */
     margin-right: auto; /* agrega un margen a la derecha que hace que se coloque a la izquierda. */
+
 }
 
 /* Estilos para los enlaces de navegación */
@@ -262,13 +272,6 @@ header button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crea tres columnas iguales */
     gap: 10px; /* Espacio entre las imágenes */
-}
-
-
-/* Estilo para las imágenes dentro del segundo div */
-.segundo-div img {
-    width: 100%;
-    height: auto; /* Ajusta la altura de la imagen manteniendo su relación de aspecto */
 }
 
 
