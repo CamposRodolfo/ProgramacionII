@@ -236,7 +236,7 @@ header button:hover {
 
 
 /* Estilos para el contenedor principal */
-.deportivas__noticias {height: 600px; /* Establece una altura fija para el contenedor de noticias */
+.deportivas__noticias {height: 800px; /* Establece una altura fija para el contenedor de noticias */
     display: grid; /* Utiliza un sistema de cuadrícula para organizar las noticias */
     grid-template-columns: repeat(3, 1fr); /* Divide el espacio en tres columnas iguales */
     justify-items: center; /* Centra los elementos horizontalmente */
@@ -245,8 +245,8 @@ header button:hover {
 }
 
 .deportivas__noticia {
-    width: 530px; /* Establece un ancho fijo para cada noticia */
-    height: 300px; /* Establece una altura fija para cada noticia */
+    width: 600px; /* Establece un ancho fijo para cada noticia */
+    height: 400px; /* Establece una altura fija para cada noticia */
     margin: auto; /* Centra la noticia horizontalmente */
     background: #fff; /* Establece un fondo blanco para la noticia */
     text-align: center; /* Centra el contenido de la noticia */
@@ -256,7 +256,7 @@ header button:hover {
 }
 
 .deportivas__noticia:hover {
-    height: 580px; /* Incrementa la altura de la noticia al pasar el cursor sobre ella */
+    height: 600px; /* Incrementa la altura de la noticia al pasar el cursor sobre ella */
     
 }
 
@@ -266,8 +266,8 @@ header button:hover {
 }
 
 .deportivas__noticia video, .deportivas__noticia iframe{
-    width: 95%; /* Establece un ancho fijo para las imágenes de las noticias */
-    height: 250px;
+    width: 570px;
+    height: 321px;
 }
 
 .deportivas__noticia p {
