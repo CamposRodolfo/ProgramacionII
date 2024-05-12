@@ -369,7 +369,8 @@ header button:hover {
 }
 
 .formulario{
-    background-color: #2d3b86;
+    color: #fff;
+    background-color: #24252A;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 3%;
@@ -381,7 +382,19 @@ header button:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Fin Contacto*/
+#message {
+    position: relative; /* Necesario para mover el placer holder dentro de un cuadro de formulario */
+  }
+  
+  /* mover el placer holder dentro de un cuadro de formulario */
+  #message::placeholder {
+    position: absolute; /* Permite mover el placeholder de posición */
+    top: 12%;
+    left: 2%; 
+  }
+
+  /* Fin de contactos */
+
 
 
 
