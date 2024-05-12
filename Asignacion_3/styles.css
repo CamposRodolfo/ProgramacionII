@@ -63,14 +63,14 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #0088A9; /* Cambia el color del texto al pasar el mouse */
+    color: #00C3FF; /* Cambia el color del texto al pasar el mouse */
 }
 
 /* Estilos para el botón */
 header button {
     margin-left: 20px; /* Establece un margen izquierdo de 20px */
     padding: 9px 25px; /* Establece un relleno interno de 9px arriba y abajo y 25px a los lados */
-    background-color: rgba(0,136,169,1); /* Establece un color de fondo con transparencia */
+    background-color: rgba(0,195,255,1); /* Establece un color de fondo con transparencia */
     border: none; /* Elimina el borde */
     border-radius: 50px; /* Establece un radio de borde para que el botón sea redondeado */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
@@ -78,7 +78,7 @@ header button {
 }
 
 header button:hover {
-    background-color: rgba(0,136,169,0.8); /* Cambia el color de fondo con transparencia al pasar el mouse */
+    background-color: rgba(0,195,255,0.7); /* Cambia el color de fondo con transparencia al pasar el mouse */
 }
 
 /*Fin de los estilos del encabezado*/
@@ -127,7 +127,7 @@ header button:hover {
 }
 
 .footer__links ul li a:hover {
-    color: #fff; /* Cambia el color del texto al pasar el mouse */
+    color: #00C3FF; /* Cambia el color del texto al pasar el mouse */
     padding-left: 6px; /* Añade un relleno izquierdo de 6px al pasar el mouse */
 }
 
@@ -204,7 +204,7 @@ header button:hover {
     color: #fff; /* Establece el color del texto del botón */
     margin-left: 20px; /* Establece un margen a la izquierda del botón */
     padding: 9px 25px; /* Establece un relleno interno para el botón */
-    background-color: rgba(0,136,169,1); /* Establece un color de fondo para el botón */
+    background-color: rgba(0,195,255,0.7); /* Establece un color de fondo para el botón */
     border: none; /* Elimina el borde del botón */
     border-radius: 50px; /* Establece esquinas redondeadas para el botón */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
@@ -212,7 +212,7 @@ header button:hover {
 }
 
 .noticia button:hover {
-    background-color: rgba(0,136,169,0.8); /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+    background-color: rgba(0,195,255,1); /* Cambia el color de fondo del botón al pasar el cursor sobre él */
 }
 
 
@@ -233,6 +233,60 @@ header button:hover {
 
 
 /* Deportivas */
+
+
+/* Estilos para el contenedor principal */
+.deportivas__noticias {height: 600px; /* Establece una altura fija para el contenedor de noticias */
+    display: grid; /* Utiliza un sistema de cuadrícula para organizar las noticias */
+    grid-template-columns: repeat(3, 1fr); /* Divide el espacio en tres columnas iguales */
+    justify-items: center; /* Centra los elementos horizontalmente */
+    background-image: url("images/deportefondo.jpeg");
+    background-size: cover;
+}
+
+.deportivas__noticia {
+    width: 530px; /* Establece un ancho fijo para cada noticia */
+    height: 300px; /* Establece una altura fija para cada noticia */
+    margin: auto; /* Centra la noticia horizontalmente */
+    background: #fff; /* Establece un fondo blanco para la noticia */
+    text-align: center; /* Centra el contenido de la noticia */
+    border-radius: 3%; /* Establece esquinas redondeadas */
+    overflow: hidden; /* Oculta el contenido que se desborde */
+    transition: 0.4s ease-in-out; /* Agrega una transición suave al cambiar la altura de la noticia */
+}
+
+.deportivas__noticia:hover {
+    height: 580px; /* Incrementa la altura de la noticia al pasar el cursor sobre ella */
+    
+}
+
+.deportivas__noticia {
+    padding-top: 15px;
+}
+
+.deportivas__noticia video {
+    width: 500px; /* Establece un ancho fijo para las imágenes de las noticias */
+}
+
+.deportivas__noticia p {
+    margin: 15px; /* Agrega un margen alrededor del texto */
+    text-align: justify; /* Justifica el texto */
+}
+
+.deportivas__noticia button {
+    color: #fff; /* Establece el color del texto del botón */
+    margin-left: 20px; /* Establece un margen a la izquierda del botón */
+    padding: 9px 25px; /* Establece un relleno interno para el botón */
+    background-color: rgba(0,195,255,0.7); /* Establece un color de fondo para el botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 50px; /* Establece esquinas redondeadas para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.3s ease 0s; /* Agrega una transición suave al botón */
+}
+
+.deportivas__noticia button:hover {
+    background-color: rgba(0,195,255,1); /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+}
 
 
 /* Fin Deportivas */
@@ -403,16 +457,6 @@ header button:hover {
 
 
 
-
-/* Estilos para el contenedor principal */
-.contenedor-principal {
-    background-color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 10%;
-    position: relative;
-    z-index: 1;
-}
 
 
 
