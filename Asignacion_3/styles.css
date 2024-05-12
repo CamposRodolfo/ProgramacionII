@@ -1,11 +1,13 @@
 /* Importaciones */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
-/* Estilos generales */
+
+/* General*/
 * {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif; /* Familia tipográfica */
+    box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -13,11 +15,13 @@ body {
     width: 100;
     height: 100vh;
     background-image: linear-gradient(#24252A 10%, #2d3b86 75%, #24252A); /* Color de fondo */
+    font-family: "Montserrat", sans-serif; /* Familia tipográfica */
+    text-transform: capitalize;
 }
 
 /* Estilos para el contenedor principal */
 .contenedor-principal {
-    background-color: black;
+    background-color: #fff;
     width: 80%;
     margin: 0 auto;
     padding: 30px 10%;
@@ -35,7 +39,6 @@ header li, header a, header button {
     text-decoration: none; /* Decoración del texto */
 }
 
-/* Estilos para el encabezado */
 header {
     border-radius: 0 0 3% 3%;
     margin-bottom: 20px;
@@ -43,12 +46,6 @@ header {
     justify-content: flex-end; /* Empuja todos los contenedores a la derecha. (toca cambiar.logo para que este a la izquierda "margin-right: auto;")*/
     align-items: center;
     padding: 5px 10%; /* Espaciado interno */
-    /* background-color: #24252A;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2; */
 }
 
 /* Estilos para el logotipo */
@@ -58,7 +55,13 @@ header {
 
 }
 
+<<<<<<< HEAD
 
+=======
+.logo img {
+ height: 150px;
+}
+>>>>>>> 20406fa8e15c2cdda4657c1f80652ef32838ce76
 
 /* Estilos para los enlaces de navegación */
 .nav__links {
@@ -95,13 +98,24 @@ header button:hover {
 
 /*Fin de los estilos del encabezado*/
 
-/* Fin de los estilos generales*/
+
+/* Fin General */
 
 
 
 
 
-/* Estilos de Home.html */
+
+
+
+
+
+
+
+
+
+
+/* Home */
 
 .noticias {
     height: 600px;
@@ -113,6 +127,7 @@ header button:hover {
 .noticia {
     width: 530px;
     height: 410px;
+    margin: auto;
     background: #fff;
     text-align: center;
     border-radius: 3%;
@@ -121,7 +136,7 @@ header button:hover {
 }
 
 .noticia:hover {
-    height: 550px;
+    height: 580px;
 }
 
 .noticia img {
@@ -135,7 +150,205 @@ header button:hover {
     text-align: justify;
 }
 
-/* Fin de los estilos home.html */
+.noticia button {
+    color: #fff;
+    margin-left: 20px;
+    padding: 9px 25px; /* Espaciado interno */
+    background-color: rgba(0,136,169,1); /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Borde redondeado */
+    cursor: pointer; /* Cambio del cursor al pasar por encima */
+    transition: all 0.3s ease 0s; /* Transición de propiedades al interactuar */
+}
+
+.noticia button:hover {
+    background-color: rgba(0,136,169,0.8); /* Color de fondo al pasar el mouse */
+}
+
+
+/* Fin Home */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Deportivas */
+
+
+/* Fin Deportivas */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Internacionales */
+
+
+/* Fin Internacionales */
+
+
+
+
+
+
+
+
+
+
+
+/* Recursos */
+
+
+/* Fin Recursos*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contacto */
+
+.contact_about_us{
+    display: flex;
+}
+
+.about_us{
+    flex: 54.5%;
+    margin-right: 2.5%;
+    margin-left: 6%;
+}
+
+.description{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact_us{
+    flex: 24.4%;
+    margin-left: 2.5%;
+    margin-right: 6%;
+}
+
+.contacts{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.contact_about_us{
+    display: flex;
+}
+
+.about_us{
+    flex: 54.5%;
+    margin-right: 2.5%;
+    margin-left: 6%;
+}
+
+.description{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact_us{
+    flex: 24.4%;
+    margin-left: 2.5%;
+    margin-right: 6%;
+}
+
+.contacts{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.forms_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario{
+    background-color: #2d3b86;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    padding: 2%;
+    width: 90%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Fin Contacto*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el contenedor principal */
+.contenedor-principal {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 10%;
+    position: relative;
+    z-index: 1;
+}
+
 
 
 
@@ -186,6 +399,7 @@ header button:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+<<<<<<< HEAD
 
 /*FIN DEPORTISTAS*/
 
@@ -226,3 +440,5 @@ header button:hover {
 }
 
 /*Fin de los estilos para el apartado de contactos*/
+=======
+>>>>>>> 20406fa8e15c2cdda4657c1f80652ef32838ce76
