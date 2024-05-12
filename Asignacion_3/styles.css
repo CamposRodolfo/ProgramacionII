@@ -390,14 +390,14 @@ header button:hover {
 
 .contact_about_us{
     display: flex;
-    background: rgb(45,59,134);
-    background: linear-gradient(0deg, rgba(45,59,134,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(45,59,134,1) 100%);
+    background: #FFF;
 }
 
 .about_us{
     flex: 54.5%;
     margin-right: 2.5%;
     margin-left: 6%;
+    margin-top: 3%;
 }
 
 .description{
@@ -414,6 +414,8 @@ header button:hover {
     flex: 24.4%;
     margin-left: 2.5%;
     margin-right: 6%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .contacts{
