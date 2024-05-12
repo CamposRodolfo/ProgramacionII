@@ -9,6 +9,8 @@
 }
 
 body {
+    width: 100;
+    height: 100vh;
     background-image: linear-gradient(#24252A 10%, #2d3b86 75%, #24252A); /* Color de fondo */
 }
 
