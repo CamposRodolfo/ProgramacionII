@@ -123,6 +123,7 @@ header button:hover {
 .noticia {
     width: 530px;
     height: 410px;
+    margin: auto;
     background: #fff;
     text-align: center;
     border-radius: 3%;
@@ -131,7 +132,7 @@ header button:hover {
 }
 
 .noticia:hover {
-    height: 550px;
+    height: 580px;
 }
 
 .noticia img {
@@ -143,6 +144,21 @@ header button:hover {
 .noticia p {
     margin: 15px;
     text-align: justify;
+}
+
+.noticia button {
+    color: #fff;
+    margin-left: 20px;
+    padding: 9px 25px; /* Espaciado interno */
+    background-color: rgba(0,136,169,1); /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Borde redondeado */
+    cursor: pointer; /* Cambio del cursor al pasar por encima */
+    transition: all 0.3s ease 0s; /* Transición de propiedades al interactuar */
+}
+
+.noticia button:hover {
+    background-color: rgba(0,136,169,0.8); /* Color de fondo al pasar el mouse */
 }
 
 
