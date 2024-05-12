@@ -1,0 +1,92 @@
+/* Estilo para el elemento body. */
+body{
+    width: 100%; /* Establece el ancho al 100% del ancho del viewport. */
+    height: 100vh; /* Establece la altura al 100% de la altura del viewport. */
+    display: flex; /* Usa flexbox para el diseño. */
+    align-items: center; /* Centra verticalmente. */
+    overflow: hidden; /* Oculta el contenido desbordado. */
+    background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30)); /* Fondo con degradado lineal. */
+}
+
+/* Estilo para el elemento contenedor. */
+.container{
+    width: 100%; /* Establece el ancho al 100% del ancho del viewport. */
+    height: 90vh; /* Establece la altura al 90% de la altura del viewport. */
+    display: flex; /* Usa flexbox para el diseño. */
+    flex-direction: row; /* Coloca los elementos hijos horizontalmente. */
+    align-items: center; /* Centra verticalmente. */
+    overflow: hidden; /* Oculta el contenido desbordado. */
+}
+
+/* Estilo para el contenedor de imágenes. */
+.imgContainer{
+    width: 100%; /* Establece el ancho al 100% del ancho del viewport. */
+    height: 600px; /* Establece la altura a 600 píxeles. */
+    position: absolute; /* Posición absoluta dentro del padre. */
+    left: 0; /* Alinea a la izquierda del padre. */
+    display: flex; /* Usa flexbox para el diseño. */
+    justify-content: center; /* Centra horizontalmente. */
+    align-items: center; /* Centra verticalmente. */
+    transition: 1s; /* Aplica transiciones con una duración de 1 segundo. */
+}
+
+/* Estilo para los contenedores de diapositivas. */
+.slide_div{
+    display: flex; /* Usa flexbox para el diseño. */
+    align-items: center; /* Centra verticalmente. */
+    justify-content: center; /* Centra horizontalmente. */
+    margin: 0 30px 0 30px; /* Establece los márgenes. */
+}
+
+/* Estilo para las imágenes. */
+img{
+    position: relative; /* Posición relativa al flujo normal. */
+    height: 370px; /* Establece la altura a 370 píxeles. */
+    width: 240px; /* Establece el ancho a 240 píxeles. */
+    filter: saturate(10%); /* Aplica filtro de saturación. */
+    transition: 0.7s; /* Aplica transiciones con una duración de 0.7 segundos. */
+    background-color: rgba(0, 0, 0, 0.4); /* Establece el color de fondo con transparencia. */
+    border-radius: 20px; /* Aplica radio de borde. */
+}
+
+/* Estilo para los botones. */
+.button{
+    position: absolute; /* Posición absoluta dentro del padre. */
+    width: 240px; /* Establece el ancho a 240 píxeles. */
+    height: 370px; /* Establece la altura a 370 píxeles. */
+    transition: 0.7s; /* Aplica transiciones con una duración de 0.7 segundos. */
+    background-color: rgba(0, 0, 0, 0.4); /* Establece el color de fondo con transparencia. */
+    border-radius: 20px; /* Aplica radio de borde. */
+}
+
+/* Estilo para el estado de hover del botón. */
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2); /* Cambia el color de fondo en hover con transparencia. */
+}
+
+/* Slider dirigido a imágenes y botones específicos */
+#slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1,
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2,
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3{
+    width: 390px; /* Establece el ancho a 390 píxeles. */
+    height: 600px; /* Establece la altura a 600 píxeles. */
+    background-color: transparent; /* Establece el color de fondo a transparente. */
+    filter: saturate(100%); /* Aumenta la saturación. */
+}
+
+/* Estilos similares para slider2 y slider3 */
+#slider1:target ~ .imgContainer{
+    left: 10%; /* Mueve el contenedor a la izquierda en un 10%. */
+}
+#slider2:target ~ .imgContainer{
+    left: 0%; /* Mueve el contenedor a la izquierda en un 0%. */
+}
+#slider3:target ~ .imgContainer{
+    left: -10%; /* Mueve el contenedor a la izquierda en un -10%. */
+}
+
+/* Estilo adicional para las imágenes. */
+.img{height: 370px;}

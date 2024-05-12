@@ -9,6 +9,11 @@
 }
 
 body {
+<<<<<<< HEAD
+=======
+    width: 100;
+    height: 100vh;
+>>>>>>> af6f0782f31b7c83be629f91642e14723c45b40b
     background-image: linear-gradient(#24252A 10%, #2d3b86 75%, #24252A); /* Color de fondo */
 }
 
