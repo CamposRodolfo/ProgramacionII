@@ -1,10 +1,13 @@
 /* Importaciones */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
-/* Estilos generales */
+
+/* General*/
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none;
     font-family: "Montserrat", sans-serif; /* Familia tipográfica */
 }
 
@@ -14,15 +17,7 @@ body {
     background-image: linear-gradient(#24252A 10%, #2d3b86 75%, #24252A); /* Color de fondo */
 }
 
-/* Estilos para el contenedor principal */
-.contenedor-principal {
-    background-color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 10%;
-    position: relative;
-    z-index: 1;
-}
+
 
 /* Estilos para el header*/
 
@@ -34,7 +29,6 @@ header li, header a, header button {
     text-decoration: none; /* Decoración del texto */
 }
 
-/* Estilos para el encabezado */
 header {
     border-radius: 0 0 3% 3%;
     margin-bottom: 20px;
@@ -91,13 +85,24 @@ header button:hover {
 
 /*Fin de los estilos del encabezado*/
 
-/* Fin de los estilos generales*/
+
+/* Fin General */
 
 
 
 
 
-/* Estilos de Home.html */
+
+
+
+
+
+
+
+
+
+
+/* Home */
 
 .noticias {
     height: 600px;
@@ -131,7 +136,105 @@ header button:hover {
     text-align: justify;
 }
 
-/* Fin de los estilos home.html */
+
+/* Fin Home */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Deportivas */
+
+
+/* Fin Deportivas */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Internacionales */
+
+
+/* Fin Internacionales */
+
+
+
+
+
+
+
+
+
+
+
+/* Recursos */
+
+
+/* Fin Recursos*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contacto */
+
+
+/* Fin Contacto*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el contenedor principal */
+.contenedor-principal {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 10%;
+    position: relative;
+    z-index: 1;
+}
+
 
 
 /* Estilo para el primer div que ocupa la mitad de la hoja */
