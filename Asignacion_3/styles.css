@@ -458,6 +458,7 @@ header button:hover {
     position: absolute; /* Permite mover el placeholder de posición */
     top: 12%;
     left: 2%;
+<<<<<<< HEAD
   }
 
   .pregunta{
@@ -475,3 +476,25 @@ header button:hover {
   }
 
   /* Fin de contactos */
+=======
+  }
+
+  .pregunta{
+    height: 1%;
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    text-align: justify;
+  }
+
+  .pregunta:hover {
+    height: 23%;
+  }
+
+  /* Fin de contactos */
+
+
+
+>>>>>>> 790480ab9a9b5d8d308efa071d9b62b29b11d172
