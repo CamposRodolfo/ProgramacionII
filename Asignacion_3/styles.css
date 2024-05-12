@@ -55,13 +55,11 @@ header {
 
 }
 
-<<<<<<< HEAD
 
-=======
 .logo img {
  height: 150px;
 }
->>>>>>> 20406fa8e15c2cdda4657c1f80652ef32838ce76
+
 
 /* Estilos para los enlaces de navegación */
 .nav__links {
@@ -98,21 +96,69 @@ header button:hover {
 
 /*Fin de los estilos del encabezado*/
 
+/* Footer */
+.footer__container{
+    max-width: 1200px; /* Establece el ancho máximo del contenedor en 1200px */
+    margin: 0 15px; /* Establece un margen de 0 arriba y abajo y 15px a los lados */
+}
+
+.footer {
+    width: 100vw; /* Establece el ancho del pie de página al ancho de la ventana */
+    padding: 80px 0; /* Establece un relleno interno de 80px arriba y abajo y 0 a los lados */
+}
+
+.footer__row {
+    display: flex; /* Establece el contenedor como un flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una fila cuando no hay suficiente espacio */
+}
+
+.footer__links {
+    width: 25%; /* Establece el ancho del contenedor de enlaces al 25% del contenedor principal */
+    padding: 0 15px; /* Establece un relleno de 0 arriba y abajo y 15px a los lados */
+}
+
+.footer__links h4 {
+    font-size: 20px; /* Establece el tamaño de fuente en 20px */
+    color: #fff; /* Establece el color del texto */
+    margin-bottom: 25px; /* Establece un margen inferior de 25px */
+    font-weight: 500; /* Establece el grosor de la fuente en 500 */
+    border-bottom: 2px solid #00C3FF; /* Establece un borde inferior de 2px sólido con un color específico */
+    padding-bottom: 10px; /* Establece un relleno inferior de 10px */
+    display: inline-block; /* Muestra el título en línea */
+}
+
+.footer__links ul li a {
+    font-size: 18px; /* Establece el tamaño de fuente en 18px */
+    text-decoration: none; /* Elimina la decoración del texto */
+    color: #BBBBBB; /* Establece el color del texto */
+    display: block; /* Muestra los elementos como bloques */
+    margin-bottom: 15px; /* Establece un margen inferior de 15px */
+    transition: all 0.3s ease; /* Establece una transición suave para todas las propiedades que cambien durante 0.3 segundos */
+}
+
+.footer__links ul li a:hover {
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+    padding-left: 6px; /* Añade un relleno izquierdo de 6px al pasar el mouse */
+}
+
+/* Estilos para pantallas de hasta 991px de ancho */
+@media(max-width:991px) {
+    .footer__row {
+        text-align: center; /* Centra el contenido */
+    }
+
+    .footer__links {
+        width: 100%; /* Establece el ancho al 100% */
+        margin-bottom: 30px; /* Establece un margen inferior de 30px */
+    }
+}
+
+/* Footer */
+
+
+
 
 /* Fin General */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Home */
@@ -337,48 +383,63 @@ header button:hover {
 
 
 
-
+/*DEPORTISTAS*/
 
 /* Estilos para el contenedor principal */
 .contenedor-principal {
     background-color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 10%;
-    position: relative;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     z-index: 1;
 }
 
 
-
-
-/*DEPORTISTAS*/
-
-/* Estilo para el primer div que ocupa la mitad de la hoja */
+/* Estilos para el primer div que ocupa la mitad de la hoja */
 .primer-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: 0 auto; /* Centra el div horizontalmente */
-    height: 500px; /* Define la altura del div */
+    width: 100%;
+    height: 800px; /* Define la altura del div */
+    position: relative; /* Asegura que los elementos absolutos se posicionen relativo a este */
 }
 
+/* Estilos para el texto centrado */
+.texto-centrado {
+    text-align: center;
+    position: absolute; /* Permite colocar este div encima del otro */
+    z-index: 2; /* Define la posición del div de texto encima de la imagen */
+    top: 5%; /* Posiciona el div de texto en la mitad vertical del contenedor */
+    transform: translateY(-50%); /* Centra verticalmente el div de texto */
+    width: 100%; /* Ajusta el ancho del div de texto al 100% del contenedor */
+}
 
-/* Estilo para las imágenes dentro del primer div */
+/* Estilos para la imagen centrada */
+.imagen-centrada {
+    text-align: center;
+    position: relative; /* Asegura que el div de imagen esté posicionado relativo a su contenedor */
+    z-index: 1; /* Define la posición de la imagen debajo del div de texto */
+    top: 5%; /* Mueve la imagen hacia arriba para que se vea más grande */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+}
+
+/* Estilos para las imágenes dentro del primer div */
 .primer-div img {
-    width: 80%;
-    height: auto; /* Ajusta la altura de la imagen manteniendo su relación de aspecto */
+    width: 100%;
+    height: 80%;
+    margin-top: 0%; /* Ajusta la altura de la imagen manteniendo su relación de aspecto */
 }
+
 
 
 /* Estilo para el segundo div que contiene las tres imágenes */
 .segundo-div {
-    width: 80%;
+    width: 100%;
     margin: 0 auto; /* Centra el div horizontalmente */
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas iguales */
-    gap: 10px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(3, 2fr); /* Crea tres columnas iguales */
+    gap: 50px; /* Espacio entre las imágenes */
 }
 
 /* Estilo para cada video */
