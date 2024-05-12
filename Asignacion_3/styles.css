@@ -56,9 +56,13 @@ header {
 
 }
 
+<<<<<<< HEAD
+
+=======
 .logo img {
  height: 150px;
 }
+>>>>>>> 20406fa8e15c2cdda4657c1f80652ef32838ce76
 
 /* Estilos para los enlaces de navegación */
 .nav__links {
@@ -416,6 +420,9 @@ header button:hover {
 
 
 
+
+/*DEPORTISTAS*/
+
 /* Estilo para el primer div que ocupa la mitad de la hoja */
 .primer-div {
     display: flex;
@@ -443,6 +450,15 @@ header button:hover {
     gap: 10px; /* Espacio entre las imágenes */
 }
 
+/* Estilo para cada video */
+.segundo-div video {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    border: 2px solid white; /* Borde blanco de 2px */
+    border-radius: 10px; /* Bordes ovalados con un radio de 10px */
+    margin-bottom: 10px; /* Espacio inferior entre videos */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del video */
+}
+
 
 #mi-video {
     width: 80%;
@@ -452,3 +468,46 @@ header button:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+<<<<<<< HEAD
+
+/*FIN DEPORTISTAS*/
+
+
+/* Estilos para el apartado de contacto */
+.contact_about_us{
+    display: flex;
+}
+
+.about_us{
+    flex: 54.5%;
+    margin-right: 2.5%;
+    margin-left: 6%;
+}
+
+.description{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact_us{
+    flex: 24.4%;
+    margin-left: 2.5%;
+    margin-right: 6%;
+}
+
+.contacts{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/*Fin de los estilos para el apartado de contactos*/
+=======
+>>>>>>> 20406fa8e15c2cdda4657c1f80652ef32838ce76
