@@ -19,16 +19,6 @@ body {
     text-transform: capitalize;
 }
 
-/* Estilos para el contenedor principal */
-.contenedor-principal {
-    background-color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 10%;
-    position: relative;
-    z-index: 1;
-}
-
 /* Estilos para el header*/
 
 /* Estilos para elementos de lista, enlaces y botones dentro del header*/
@@ -394,7 +384,6 @@ header button:hover {
   }
 
   /* Fin de contactos */
-
 
 
 
