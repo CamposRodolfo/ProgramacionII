@@ -11,19 +11,20 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    min-height: 100vh;
-    background-color: rgba(3,37,57,1);
+    font-family: "Montserrat", sans-serif; /* Usa la fuente Montserrat o, si no está disponible, una fuente sans-serif */
+    font-size: 1.2rem; /* Establece el tamaño de fuente base en 1.2 rem */
+    min-height: 100vh; /* Establece la altura mínima del cuerpo como el 100% del viewport */
+    background-color: rgba(3,37,57,1); /* Establece el color de fondo del cuerpo */
 }
 
 
+/* Estilos para elementos hijos directos de '.body' */
 .body > *{
-    box-shadow: 10px 6px 37px -13px rgba(51,51,51,0.74);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    font-weight: 500;
+    box-shadow: 10px 6px 37px -13px rgba(51,51,51,0.74); /* Establece una sombra en los elementos */
+    border-radius: 10px; /* Establece un radio de borde de 10px */
+    padding: 10px; /* Establece un relleno interno de 10px */
+    text-align: center; /* Centra el texto */
+    font-weight: 500; /* Establece el grosor de la fuente */
 }
 
 .header {
@@ -31,14 +32,16 @@ body {
     font-size: 1.25rem; /* Tamaño del texto */
     color: #edf0f1; /* Color del texto */
     
+    /* Estilos para elementos de lista, enlaces y botones dentro del encabezado */
     li, a, button {
         font-weight: 500; /* Grosor del texto */
         font-size: 1.25rem; /* Tamaño del texto */
         color: #edf0f1; /* Color del texto */
-        text-decoration: none; /* Decoración del texto */
+        text-decoration: none; /* Elimina la decoración del texto */
     }
 
     button {
+        /* Establece el estilo del botón */
         padding: 9px 25px; /* Establece un relleno interno de 9px arriba y abajo y 25px a los lados */
         background-color: rgba(250,153,28,1); /* Establece un color de fondo con transparencia */
         border: none; /* Elimina el borde */
@@ -47,16 +50,19 @@ body {
         transition: all 0.3s ease 0s; /* Establece una transición suave para todas las propiedades que cambien durante 0.3 segundos */
     }
 
+    /* Estilos para el botón al pasar el mouse sobre él */
     button:hover {
         background-color: rgb(228,140,25,1); /* Cambia el color de fondo con transparencia al pasar el mouse */
     }
 }
 
+/* Estilos comunes para '.header', '.news', '.news-sport' y '#contact-send' */
 .header, .news, .news-sport,  #contact-send {
     button {
-        color: #edf0f1;
-        font-size: 1rem;
-        font-weight: 500;
+        /* Establece el estilo del botón */
+        color: #edf0f1; /* Color del texto */
+        font-size: 1rem; /* Tamaño del texto */
+        font-weight: 500; /* Grosor del texto */
         padding: 9px 25px; /* Establece un relleno interno de 9px arriba y abajo y 25px a los lados */
         background-color: rgba(250,153,28,1); /* Establece un color de fondo con transparencia */
         border: none; /* Elimina el borde */
@@ -65,26 +71,27 @@ body {
         transition: all 0.3s ease 0s; /* Establece una transición suave para todas las propiedades que cambien durante 0.3 segundos */
     }
 
+    /* Estilos para el botón al pasar el mouse sobre él */
     button:hover {
         background-color: rgba(228,140,25,1); /* Cambia el color de fondo con transparencia al pasar el mouse */
     }
 
 }
 
+/* Estilos para el logotipo */
 .logo {
     cursor: pointer; /* Establece el cursor como un puntero al pasar sobre el logotipo */
-    background-color: #FFF;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 50%;
+    background-color: #FFF; /* Establece el color de fondo del logotipo */
+    margin: 10px; /* Establece un margen exterior de 10px */
+    padding: 10px; /* Establece un relleno interno de 10px */
+    border-radius: 50%; /* Establece un radio de borde del 50% para que el logotipo sea circular */
 
     img {
-        height: 100px; /* Establece la altura de la imagen del logotipo en 150px */
-        
-        
+        height: 100px; /* Establece la altura de la imagen del logotipo en 100px */
     }
 }
 
+/* Estilos para elementos de lista dentro de la barra de navegación */
 .navbar li {
     display: inline-block; /* Muestra los elementos en línea */
     padding: 0px 20px; /* Establece un relleno de 20px a los lados (espaciado interno) */
@@ -93,38 +100,43 @@ body {
         transition: all 0.3s ease 0s; /* Establece una transición suave para todas las propiedades que cambien durante 0.3 segundos */
     }
 
+    /* Estilos para el enlace al pasar el mouse sobre él */
     a:hover {
         color: rgba(250,153,28,1); /* Cambia el color del texto al pasar el mouse */
     }
 }
 
+/* Estilos para el pie de página */
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
+    display: flex; /* Muestra los elementos como una fila */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en la fila */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
-.footer-links {
-    padding: 15px; /* Establece un relleno de 0 arriba y abajo y 15px a los lados */
 
+/* Estilos para los enlaces del pie de página */
+.footer-links {
+    padding: 15px; /* Establece un relleno de 15px */
+    
     h4 {
-        font-size: 1.25rem; /* Establece el tamaño de fuente en 20px */
-        color: #edf0f1;; /* Establece el color del texto */
+        font-size: 1.25rem; /* Tamaño de fuente */
+        color: #edf0f1; /* Color del texto */
         margin-bottom: 25px; /* Establece un margen inferior de 25px */
-        font-weight: 500; /* Establece el grosor de la fuente en 500 */
+        font-weight: 500; /* Grosor del texto */
         border-bottom: 2px solid rgba(250,153,28,1); /* Establece un borde inferior de 2px sólido con un color específico */
         padding-bottom: 10px; /* Establece un relleno inferior de 10px */
         display: inline-block; /* Muestra el título en línea */
     }
 
     ul li a {
-        font-size: 18px; /* Establece el tamaño de fuente en 18px */
+        font-size: 18px; /* Tamaño de fuente */
         text-decoration: none; /* Elimina la decoración del texto */
-        color: #cccfcf; /* Establece el color del texto */
+        color: #cccfcf; /* Color del texto */
         display: block; /* Muestra los elementos como bloques */
         margin-bottom: 15px; /* Establece un margen inferior de 15px */
         transition: all 0.3s ease; /* Establece una transición suave para todas las propiedades que cambien durante 0.3 segundos */
     }
 
+    /* Estilos para el enlace al pasar el mouse sobre él */
     ul li a:hover {
         color: rgba(250,153,28,1); /* Cambia el color del texto al pasar el mouse */
         padding-left: 6px; /* Añade un relleno izquierdo de 6px al pasar el mouse */
@@ -132,117 +144,135 @@ body {
 }
 
 
+
+
 /* Responsive */
 .body {
-    display: grid;
-    gap: 20px;
+    display: grid; /* Muestra los elementos como una cuadrícula */
+    gap: 20px; /* Establece un espacio entre los elementos de 20px */
     grid-template: 
-    "header" auto
-    "main" auto
-    "footer" 300px
+    "header" auto /* Establece una fila automática para el encabezado */
+    "main" auto /* Establece una fila automática para el contenido principal */
+    "footer" 300px /* Establece una fila de 300px de alto para el pie de página */
     ;
 
+    /* Estilos para el encabezado */
     .header {
-        grid-area: header;
-        background-color: rgba(28,118,143,0.74);
+        grid-area: header; /* Asigna el área del encabezado */
+        background-color: rgba(28,118,143,0.74); /* Establece el color de fondo del encabezado */
     }
 
+    /* Estilos para el contenido principal */
     .main {
-        grid-area: main;
-        background-color: rgba(251,243,242,1);
+        grid-area: main; /* Asigna el área del contenido principal */
+        background-color: rgba(251,243,242,1); /* Establece el color de fondo del contenido principal */
     }
 
+    /* Estilos para el pie de página */
     .footer {
-        grid-area: footer;
-        background-color: rgba(28,118,143,0.74);
+        grid-area: footer; /* Asigna el área del pie de página */
+        background-color: rgba(28,118,143,0.74); /* Establece el color de fondo del pie de página */
     }
 
+    /* Estilos para los elementos con id 'main-home' y 'main-inter' */
     #main-home, #main-inter {
-        min-height: 2400px;
+        min-height: 2400px; /* Establece la altura mínima en 2400px */
     }
 
+    /* Estilos para dispositivos con un ancho de pantalla mínimo de 768px */
     @media(min-width: 768px) {
         grid-template: 
         "header" auto
         "main" auto
-        "footer" 300px;
+        "footer" 300px; /* Establece la plantilla de la cuadrícula para pantallas de 768px o más */
 
         #main-home, #main-inter {
-            min-height: 1600px;
+            min-height: 1600px; /* Establece la altura mínima en 1600px */
         }
     }
 
+    /* Estilos para dispositivos con un ancho de pantalla mínimo de 992px */
     @media(min-width: 992px) {
         grid-template: 
         "header" auto
         "main" auto
-        "footer" 300px;
+        "footer" 300px; /* Establece la plantilla de la cuadrícula para pantallas de 992px o más */
 
         #main-home, #main-inter {
-            min-height: 800px;
+            min-height: 800px; /* Establece la altura mínima en 800px */
         }
     }
 }
 
 .header {
-    display: grid;
-    place-items: center;
+    display: grid; /* Muestra los elementos como una cuadrícula */
+    place-items: center; /* Centra los elementos horizontal y verticalmente */
     grid-template: 
-    "logo" auto
-    "navbar" auto
-    "contact" auto;
-    
+    "logo" auto /* Establece una fila automática para el logotipo */
+    "navbar" auto /* Establece una fila automática para la barra de navegación */
+    "contact" auto; /* Establece una fila automática para el contacto */
+
+    /* Estilos para el logotipo */
     .logo {
-        grid-area: logo;
+        grid-area: logo; /* Asigna el área del logotipo */
     }
 
+    /* Estilos para la barra de navegación */
     .navbar {
-        grid-area: navbar;
+        grid-area: navbar; /* Asigna el área de la barra de navegación */
     }
 
+    /* Estilos para el contacto */
     .contact {
-        grid-area: contact;
+        grid-area: contact; /* Asigna el área del contacto */
     }
     
+    /* Estilos para dispositivos con un ancho de pantalla mínimo de 992px */
     @media(min-width: 992px) {
         grid-template: 
-        "logo navbar contact" auto/
-        auto 600px 200px;
-
+        "logo navbar contact" auto/ /* Establece una cuadrícula de tres columnas */
+        auto 600px 200px; /* Establece el ancho de las columnas */
+        
+        /* Estilos para el logotipo */
         .logo {
-            margin-right: auto;
+            margin-right: auto; /* Establece un margen derecho automático */
         }
     }
 }
 
 .navbar ul{
-    display: grid;
-    place-items: center;
+    display: grid; /* Muestra los elementos como una cuadrícula */
+    place-items: center; /* Centra los elementos horizontal y verticalmente */
     grid-template: 
-    "home" auto
-    "sport" auto
-    "inter" auto
-    "source" auto;
+    "home" auto /* Establece una fila automática para el enlace de inicio */
+    "sport" auto /* Establece una fila automática para el enlace de deportes */
+    "inter" auto /* Establece una fila automática para el enlace internacional */
+    "source" auto; /* Establece una fila automática para el enlace de fuentes */
 
+    /* Estilos para el enlace de inicio */
     .home {
-        grid-area: home;
+        grid-area: home; /* Asigna el área del enlace de inicio */
     }
 
+    /* Estilos para el enlace de deportes */
     .sport {
-        grid-area: sport;
+        grid-area: sport; /* Asigna el área del enlace de deportes */
     }
 
+    /* Estilos para el enlace internacional */
     .inter {
-        grid-area: inter;
+        grid-area: inter; /* Asigna el área del enlace internacional */
     }
 
+    /* Estilos para el enlace de fuentes */
     .source {
-        grid-area: source;
+        grid-area: source; /* Asigna el área del enlace de fuentes */
     }
 
+    /* Estilos para dispositivos con un ancho de pantalla mínimo de 992px */
     @media(min-width: 992px) {
         grid-template: 
-        "home sport inter source" auto;
+        "home sport inter source" auto; /* Establece una cuadrícula de cuatro columnas */
     }
 }
 
@@ -257,72 +287,77 @@ body {
 
 /* home, sport, International */
 #main-home, #main-inter {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+    display: grid; /* Muestra los elementos como una cuadrícula */
+    grid-template-columns: 1fr; /* Establece una columna */
+    grid-auto-rows: auto; /* Establece el alto de las filas automáticamente */
 
+    /* Estilos para dispositivos con un ancho de pantalla mínimo de 768px */
     @media(min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Establece dos columnas */
     }
 
+    /* Estilos para dispositivos con un ancho de pantalla mínimo de 992px */
     @media(min-width: 992px) {
-        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-columns: repeat(3, 1fr); /* Establece tres columnas */
     }
 }
 
+
 .news {
-    width: 500px;
-    height: 57%;
-    margin: auto;
-    padding: 30px;
+    width: 500px; /* Establece el ancho de la noticia en 500px */
+    height: 57%; /* Establece la altura de la noticia en el 57% */
+    margin: auto; /* Centra la noticia horizontalmente */
+    padding: 30px; /* Establece un relleno de 30px */
     background: #fff; /* Establece un fondo blanco para la noticia */
-    border-radius: 3%;
-    backdrop-filter: blur(5px);
-    border-bottom: 3px solid rgba(0,0,0,0.440);
-    border-left: 2px rgba(0,0,0,0.545) outset;
-    box-shadow:-40px 50px 30px rgba(0,0,0,0.280);
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
+    border-radius: 3%; /* Establece un radio de borde del 3% */
+    backdrop-filter: blur(5px); /* Aplica un desenfoque de fondo */
+    border-bottom: 3px solid rgba(0,0,0,0.440); /* Establece un borde inferior */
+    border-left: 2px rgba(0,0,0,0.545) outset; /* Establece un borde izquierdo */
+    box-shadow:-40px 50px 30px rgba(0,0,0,0.280); /* Establece una sombra */
+    overflow: hidden; /* Oculta el desbordamiento */
+    transition: 0.4s ease-in-out; /* Establece una transición suave */
 
     img {
-        width: 400px;
+        width: 400px; /* Establece el ancho de la imagen en 400px */
     }
-
-    
 }
 
 .news:hover {
-    height: 98%;
+    height: 98%; /* Aumenta la altura al 98% */
 }
 
 
 .news {
-    display: grid;
-    place-items: center;
-    gap: 20px;
+    display: grid; /* Muestra los elementos como una cuadrícula */
+    place-items: center; /* Centra los elementos horizontal y verticalmente */
+    gap: 20px; /* Establece un espacio entre los elementos de 20px */
     grid-template: 
-    "heading" 150px
-    "image" 230px
-    "body" auto
-    "more" auto
+    "heading" 150px /* Establece una fila para el título */
+    "image" 230px /* Establece una fila para la imagen */
+    "body" auto /* Establece una fila automática para el cuerpo */
+    "more" auto /* Establece una fila automática para 'más' */
     ;
 
+    /* Estilos para el título */
     .news-heading {
-        grid-area: heading;
-        text-align: left;
+        grid-area: heading; /* Asigna el área del título */
+        text-align: left; /* Alinea el texto a la izquierda */
     }
 
+    /* Estilos para la imagen */
     .news-image {
-        grid-area: image;
+        grid-area: image; /* Asigna el área de la imagen */
     }
 
+    /* Estilos para el cuerpo */
     .news-body {
-        grid-area: body;
-        text-align: justify;
+        grid-area: body; /* Asigna el área del cuerpo */
+        text-align: justify; /* Justifica el texto */
     }
 
+    /* Estilos para 'más' */
     .news-more {
-        grid-area: more;
+        grid-area: more; /* Asigna el área de 'más' */
     }
 }
 
@@ -332,27 +367,26 @@ body {
 
 /* sport */
 .news-sport {
-    width: 570px;
-    height: 60%;
-    margin: auto;
-    padding: 20px;
+    width: 570px; /* Establece el ancho de la noticia en 570px */
+    height: 60%; /* Establece la altura de la noticia en el 60% */
+    margin: auto; /* Centra la noticia horizontalmente */
+    padding: 20px; /* Establece un relleno de 20px */
     background: #fff; /* Establece un fondo blanco para la noticia */
-    border-radius: 3%;
-    backdrop-filter: blur(5px);
-    border-bottom: 3px solid rgba(0,0,0,0.440);
-    border-left: 2px rgba(0,0,0,0.545) outset;
-    box-shadow:-40px 50px 30px rgba(0,0,0,0.280);
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
+    border-radius: 3%; /* Establece un radio de borde del 3% */
+    backdrop-filter: blur(5px); /* Aplica un desenfoque de fondo */
+    border-bottom: 3px solid rgba(0,0,0,0.440); /* Establece un borde inferior */
+    border-left: 2px rgba(0,0,0,0.545) outset; /* Establece un borde izquierdo */
+    box-shadow:-40px 50px 30px rgba(0,0,0,0.280); /* Establece una sombra */
+    overflow: hidden; /* Oculta el desbordamiento */
+    transition: 0.4s ease-in-out; /* Establece una transición suave */
 
     iframe {
-        width: 100%;
+        width: 100%; /* Establece el ancho del iframe al 100% */
     }
-    
 }
 
 .news-sport:hover {
-    height: 98%;
+    height: 98%; /* Aumenta la altura al 98% */
 }
 
 .news-sport {
