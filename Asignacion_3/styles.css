@@ -1,0 +1,477 @@
+/* Importa la fuente 'Montserrat' desde Google Fonts con distintos pesos y estilos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+
+/* Configuración General para todos los elementos */
+* {
+    margin: 0; /* Establece el margen exterior en 0 */
+    padding: 0; /* Establece el relleno interior en 0 */
+    box-sizing: border-box; /* Hace que el tamaño total de un elemento sea su ancho y alto incluyendo el relleno y el borde, pero no el margen */
+    list-style: none; /* Elimina el marcador de lista */
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    width: 100%; /* Establece el ancho al 100% */
+    background-image: linear-gradient(#24252A, #2d3b86, #24252A); /* Establece una imagen de fondo con un degradado lineal */
+    font-family: "Montserrat", sans-serif; /* Establece la familia tipográfica */
+    text-transform: capitalize; /* Transforma el texto a mayúsculas iniciales */
+}
+
+/* Estilos para el header*/
+
+/* Estilos para elementos de lista, enlaces y botones dentro del header*/
+header li, header a, header button {
+    font-weight: 500; /* Grosor del texto */
+    font-size: 16px; /* Tamaño del texto */
+    color: #edf0f1; /* Color del texto */
+    text-decoration: none; /* Decoración del texto */
+}
+
+/* Estilos para el encabezado */
+header {
+    border-radius: 0 0 3% 3%; /* Define un radio de borde para las esquinas inferiores */
+    margin-bottom: 20px; /* Establece un margen inferior de 20px */
+    display: flex; /* Establece el contenedor como un flexbox */
+    justify-content: flex-end; /* Alinea los elementos del flexbox al extremo derecho */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    padding: 5px 10%; /* Establece un relleno interno de 5px arriba y abajo y 10% a los lados */
+}
+
+/* Estilos para el logotipo */
+.logo {
+    cursor: pointer; /* Establece el cursor como un puntero al pasar sobre el logotipo */
+    margin-right: auto; /* Alinea el logotipo a la izquierda, agregando margen derecho automático */
+}
+
+.logo img {
+    height: 150px; /* Establece la altura de la imagen del logotipo en 150px */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav__links {
+    list-style: none; /* Elimina el marcador de lista */
+}
+
+.nav__links li {
+    display: inline-block; /* Muestra los elementos en línea */
+    padding: 0px 20px; /* Establece un relleno de 20px a los lados (espaciado interno) */
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s; /* Establece una transición suave para todas las propiedades que cambien durante 0.3 segundos */
+}
+
+.nav__links li a:hover {
+    color: #00C3FF; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Estilos para el botón */
+header button {
+    margin-left: 20px; /* Establece un margen izquierdo de 20px */
+    padding: 9px 25px; /* Establece un relleno interno de 9px arriba y abajo y 25px a los lados */
+    background-color: rgba(0,195,255,1); /* Establece un color de fondo con transparencia */
+    border: none; /* Elimina el borde */
+    border-radius: 50px; /* Establece un radio de borde para que el botón sea redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.3s ease 0s; /* Establece una transición suave para todas las propiedades que cambien durante 0.3 segundos */
+}
+
+header button:hover {
+    background-color: rgba(0,195,255,0.7); /* Cambia el color de fondo con transparencia al pasar el mouse */
+}
+
+/*Fin de los estilos del encabezado*/
+
+
+
+
+/* Footer */
+.footer__container{
+    max-width: 1200px; /* Establece el ancho máximo del contenedor en 1200px */
+    margin: 0 15px; /* Establece un margen de 0 arriba y abajo y 15px a los lados */
+}
+
+.footer {
+    width: 100vw; /* Establece el ancho del pie de página al ancho de la ventana */
+    padding: 80px 0; /* Establece un relleno interno de 80px arriba y abajo y 0 a los lados */
+}
+
+.footer__row {
+    display: flex; /* Establece el contenedor como un flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una fila cuando no hay suficiente espacio */
+}
+
+.footer__links {
+    width: 25%; /* Establece el ancho del contenedor de enlaces al 25% del contenedor principal */
+    padding: 0 15px; /* Establece un relleno de 0 arriba y abajo y 15px a los lados */
+}
+
+.footer__links h4 {
+    font-size: 20px; /* Establece el tamaño de fuente en 20px */
+    color: #fff; /* Establece el color del texto */
+    margin-bottom: 25px; /* Establece un margen inferior de 25px */
+    font-weight: 500; /* Establece el grosor de la fuente en 500 */
+    border-bottom: 2px solid #00C3FF; /* Establece un borde inferior de 2px sólido con un color específico */
+    padding-bottom: 10px; /* Establece un relleno inferior de 10px */
+    display: inline-block; /* Muestra el título en línea */
+}
+
+.footer__links ul li a {
+    font-size: 18px; /* Establece el tamaño de fuente en 18px */
+    text-decoration: none; /* Elimina la decoración del texto */
+    color: #BBBBBB; /* Establece el color del texto */
+    display: block; /* Muestra los elementos como bloques */
+    margin-bottom: 15px; /* Establece un margen inferior de 15px */
+    transition: all 0.3s ease; /* Establece una transición suave para todas las propiedades que cambien durante 0.3 segundos */
+}
+
+.footer__links ul li a:hover {
+    color: #00C3FF; /* Cambia el color del texto al pasar el mouse */
+    padding-left: 6px; /* Añade un relleno izquierdo de 6px al pasar el mouse */
+}
+
+/* Estilos para pantallas de hasta 991px de ancho */
+@media(max-width:991px) {
+    .footer__row {
+        text-align: center; /* Centra el contenido */
+    }
+
+    .footer__links {
+        width: 100%; /* Establece el ancho al 100% */
+        margin-bottom: 30px; /* Establece un margen inferior de 30px */
+    }
+}
+
+/* Footer */
+
+
+
+
+
+/* Fin General */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home */
+
+.noticias {
+    height: 600px; /* Establece una altura fija para el contenedor de noticias */
+    display: grid; /* Utiliza un sistema de cuadrícula para organizar las noticias */
+    grid-template-columns: repeat(3, 1fr); /* Divide el espacio en tres columnas iguales */
+    justify-items: center; /* Centra los elementos horizontalmente */
+}
+
+.noticia {
+    width: 530px; /* Establece un ancho fijo para cada noticia */
+    height: 410px; /* Establece una altura fija para cada noticia */
+    margin: auto; /* Centra la noticia horizontalmente */
+    background: #fff; /* Establece un fondo blanco para la noticia */
+    text-align: center; /* Centra el contenido de la noticia */
+    border-radius: 3%; /* Establece esquinas redondeadas */
+    overflow: hidden; /* Oculta el contenido que se desborde */
+    transition: 0.4s ease-in-out; /* Agrega una transición suave al cambiar la altura de la noticia */
+}
+
+.noticia:hover {
+    height: 580px; /* Incrementa la altura de la noticia al pasar el cursor sobre ella */
+}
+
+.noticia img {
+    width: 500px; /* Establece un ancho fijo para las imágenes de las noticias */
+    margin: 15px; /* Agrega un margen alrededor de la imagen */
+    border-radius: 3%; /* Establece esquinas redondeadas para la imagen */
+}
+
+.noticia p {
+    margin: 15px; /* Agrega un margen alrededor del texto */
+    text-align: justify; /* Justifica el texto */
+}
+
+.noticia button {
+    color: #fff; /* Establece el color del texto del botón */
+    margin-left: 20px; /* Establece un margen a la izquierda del botón */
+    padding: 9px 25px; /* Establece un relleno interno para el botón */
+    background-color: rgba(0,195,255,0.7); /* Establece un color de fondo para el botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 50px; /* Establece esquinas redondeadas para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.3s ease 0s; /* Agrega una transición suave al botón */
+}
+
+.noticia button:hover {
+    background-color: rgba(0,195,255,1); /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+}
+
+
+
+
+
+/* Fin Home */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Deportivas */
+
+
+/* Estilos para el contenedor principal */
+.deportivas__noticias {height: 800px; /* Establece una altura fija para el contenedor de noticias */
+    display: grid; /* Utiliza un sistema de cuadrícula para organizar las noticias */
+    grid-template-columns: repeat(3, 1fr); /* Divide el espacio en tres columnas iguales */
+    justify-items: center; /* Centra los elementos horizontalmente */
+    background-image: url("images/deportefondo.jpeg");
+    background-size: cover;
+}
+
+.deportivas__noticia {
+    width: 600px; /* Establece un ancho fijo para cada noticia */
+    height: 420px; /* Establece una altura fija para cada noticia */
+    margin: auto; /* Centra la noticia horizontalmente */
+    background: #fff; /* Establece un fondo blanco para la noticia */
+    text-align: center; /* Centra el contenido de la noticia */
+    border-radius: 3%; /* Establece esquinas redondeadas */
+    overflow: hidden; /* Oculta el contenido que se desborde */
+    transition: 0.4s ease-in-out; /* Agrega una transición suave al cambiar la altura de la noticia */
+}
+
+.deportivas__noticia:hover {
+    height: 600px; /* Incrementa la altura de la noticia al pasar el cursor sobre ella */
+    
+}
+
+
+.deportivas__noticia {
+    padding-top: 15px;
+}
+
+.deportivas__noticia video, .deportivas__noticia iframe{
+    width: 560px;
+    height: 315px;
+}
+
+.deportivas__noticia p {
+    margin: 15px; /* Agrega un margen alrededor del texto */
+    text-align: justify; /* Justifica el texto */
+}
+
+.deportivas__noticia button {
+    color: #fff; /* Establece el color del texto del botón */
+    margin-left: 20px; /* Establece un margen a la izquierda del botón */
+    padding: 9px 25px; /* Establece un relleno interno para el botón */
+    background-color: rgba(0,195,255,0.7); /* Establece un color de fondo para el botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 50px; /* Establece esquinas redondeadas para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.3s ease 0s; /* Agrega una transición suave al botón */
+}
+
+.deportivas__noticia button:hover {
+    background-color: rgba(0,195,255,1); /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+}
+
+
+/* Fin Deportivas */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Internacionales */
+
+
+/* Fin Internacionales */
+
+
+
+
+
+
+
+
+
+
+
+/* Recursos */
+
+
+/* Fin Recursos*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contacto */
+
+.contact_about_us{
+    display: flex;
+}
+
+.about_us{
+    flex: 54.5%;
+    margin-right: 2.5%;
+    margin-left: 6%;
+}
+
+.description{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact_us{
+    flex: 24.4%;
+    margin-left: 2.5%;
+    margin-right: 6%;
+}
+
+.contacts{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.contact_about_us{
+    display: flex;
+}
+
+.about_us{
+    flex: 54.5%;
+    margin-right: 2.5%;
+    margin-left: 6%;
+}
+
+.description{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact_us{
+    flex: 24.4%;
+    margin-left: 2.5%;
+    margin-right: 6%;
+}
+
+.contacts{
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.contact_info{
+    margin-left: 7%;
+    margin-bottom: 1.5%;
+}
+
+.forms_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario{
+    color: #fff;
+    background-color: #24252A;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    padding: 2%;
+    width: 90%;
+    height: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px; /*Cambia el tamaño de la letra del placeholder*/
+}
+
+.forms_button {
+    color: #fff;
+    text-align: center;
+    margin-left: 1%;
+    padding: 1%; /* Espaciado interno */
+    background-color: rgba(0,136,169,1); /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Borde redondeado */
+    cursor: pointer; /* Cambio del cursor al pasar por encima */
+    transition: all 0.3s ease 0s; /* Transición de propiedades al interactuar */
+}
+
+.forms_button:hover {
+    background-color: rgba(0,136,169,0.8); /* Color de fondo al pasar el mouse */
+}
+
+#message {
+    position: relative; /* Necesario para mover el placer holder dentro de un cuadro de formulario */
+  }
+  
+  /* mover el placer holder dentro de un cuadro de formulario */
+  #message::placeholder {
+    position: absolute; /* Permite mover el placeholder de posición */
+    top: 12%;
+    left: 2%;
+  }
+
+  .pregunta{
+    height: 1%;
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2%;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    text-align: justify;
+  }
+
+  .pregunta:hover {
+    height: 23%;
+  }
+
+  /* Fin de contactos */
